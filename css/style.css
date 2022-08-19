@@ -1,0 +1,48 @@
+.layer {
+
+    bottom    : -50px;
+    left      : 15px;
+    right     : 15px;
+    margin    : auto;
+    opacity   : 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item:hover .layer {
+    opacity: 1;
+    bottom : 15px;
+}
+
+#boxContainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    display         : none;
+    justify-content : center;
+    align-items     : center;
+}
+
+#boxInner {
+
+
+    width : 50%;
+    height: 500px;
+
+    background-image: url(../images/portfolio-1.jpg);
+    background-size : cover;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+#boxInner i {
+    font-size: 30px;
+    cursor   : pointer;
+}
